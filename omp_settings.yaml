@@ -1,0 +1,106 @@
+data_dir: /home/chad/datasets/ThreeDeeOffice
+depth_max: 30
+plot_depth: True
+tf_bodyInW: [1,0,0,0,0,-1,0,0,0,0,-1,0,0,0,0,1]
+tf_camInB: [0,0,1,0,
+            1,0,0,0,
+            0,1,0,0,
+            0,0,0,1]
+tf_tagInCam: [0,1,0,0,
+              -1,0,0,0,
+              0,0,1,0,
+              0,0,0,1]
+tf_tagFaceInBody: [-1,0,0,0,
+                   0, 0,-1,0,
+                   0,-1,0,0,
+                   0,0,0,1]
+tf_aprilTagInBody: [1,0,0,0,
+                    0,0,-1,0,
+                    0,1,0,0,
+                    0,0,0,1]
+random_seed: 0
+airsim:
+    cam_name: 0
+    wall_labels: []#[wall, pillar, surface]
+    wall_color: [153, 108, 6]
+    wall_seg_id: 1
+    cube_label: Cube
+    img_w: 600
+    img_h: 450
+    dep_w: 300
+    dep_h: 225
+    fov: 90
+angular_scan_resolution:
+    fine: 8
+    coarse: 4
+grid_mapping:
+    grid_size: 0.7
+    x_length: 16
+    y_length: 16
+    x_offset: -5
+    y_offset: -5
+    obstacle_thickness: 0.3
+    free_dot_threshold: 0.4
+    manual_align: False
+    free_bearing_inflate: 5.0
+    ocp_bearing_inflate: 1.0
+imp_data_preprocess:
+    overwrite_data: False
+    save_feature_img: True
+    save_feature_txt: True
+    save_scan_txt: True
+    nfeatures: 1000
+    contrastThreshold: 0.1
+    edgeThreshold: 5
+marker_pose_samples:
+    sampling_ratio: 1.0
+    voxel_size: 0.05
+    min_distance: 1.0
+    outlier_distance: 0.5
+similar_features:
+    min_sim_score: 0.9
+    min_distance: 2.0
+    parallel_jobs: 1
+    batch_size: 2000
+    voxel_size: 0.05
+marker_placement:
+    marker_prior_std: [1.e-5, 1.e-5, 1.e-5, 1.e-5, 1.e-5, 1.e-5]
+    marker_meas_std: [1.e-3, 1.e-3, 1.e-3, 1.e-3, 1.e-3, 1.e-3]
+    cam_prior_std: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+    lmk_prior_std: [5.e-2, 5.e-2, 5.e-2]
+    pix_std: 1
+    max_dist: 10
+    max_angle: 45
+    marker_num: 20
+    most_vis_marker_percentages: [90] #[90]
+    mean_max_weights: [0.5,0.5]
+    pkl_res_path: None
+    placed_marker_path: None
+    ignore_features: False
+evaluation_datasets:
+    marker_nums: [0,5,10,15,20]
+    imp_max_ratios: []
+    rd_ids: [0,1,2,3,4] #[0,1,2,3,4]
+    uc_ids: [0,1,2,3,4] #,1,2,3,4]
+    size_ratios: [] #[25,50,75,125,150,175]
+    tf_perturb: [] #[-25,-50,-75,-100,25,50,75,100]
+    test_img_num: 2000
+    ref_res_pkl: /home/chad/datasets/ThreeDeeOffice/imp_res/90percent_markers/run0/res0.pkl
+    test_cam_trans_noise_scale: 1.0
+    test_cam_theta_noise_scale: 1.0
+    test_sample_mean_weight_scales: [1] #[2,4,8,16] #[1]
+    test_data_distributions: [weighted,unif] #[weighted,unif]
+performance_evaluation:
+    VLAD_visual_words: 5
+    ball_tree_leaf_size: 10
+    nearest_neighbor_imgs: 10
+    parallel_jobs: 1
+    trans_angle_max: [[0.01, 1],[0.05, 5],[0.1, 10],[1,30]]
+    tag_loc_percent: [1.0]
+    tag_family: tag36h11
+    tag_size: 0.414715509
+    dft_sift_params: True
+    trans_tol: 1.0
+    rad_tol: 1.0
+baseline_method:
+    unif_contour_min_distance: 2.0

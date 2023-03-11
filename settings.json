@@ -1,0 +1,150 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "ComputerVision",
+  "ViewMode": "NoDisplay",
+  "Recording": {
+    "RecordOnMove": true,
+    "RecordInterval": 0.5,
+    "Folder": "",
+    "Enabled": false,
+    "Cameras": [
+      {
+        "CameraName": "0",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "VehicleName": "myCam",
+        "Compress": true
+      },
+	  {
+        "CameraName": "0",
+        "ImageType": 1,
+        "PixelsAsFloat": false,
+        "VehicleName": "myCam",
+        "Compress": true
+      },
+	  {
+        "CameraName": "0",
+        "ImageType": 5,
+        "PixelsAsFloat": false,
+        "VehicleName": "myCam",
+        "Compress": true
+      },
+	  {
+        "CameraName": "0",
+        "ImageType": 6,
+        "PixelsAsFloat": false,
+        "VehicleName": "myCam",
+        "Compress": true
+      }
+    ]
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": -1,
+        "FOV_Degrees": 90
+      },
+      {
+        "ImageType": 0,
+        "Width": 600,
+        "Height": 450,
+        "FOV_Degrees": 90,
+        "MotionBlurAmount": 0,
+		"AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12,
+		"MotionBlurAmount": 0
+      },
+      {
+        "ImageType": 1,
+        "Width": 300,
+        "Height": 225,
+        "FOV_Degrees": 90,
+        "MotionBlurAmount": 0
+      },
+      {
+        "ImageType": 2,
+        "Width": 300,
+        "Height": 225,
+        "FOV_Degrees": 90,
+        "MotionBlurAmount": 0
+      },
+      {
+        "ImageType": 5,
+        "Width": 600,
+        "Height": 450,
+        "FOV_Degrees": 90,
+        "MotionBlurAmount": 0
+      },
+      {
+        "ImageType": 6,
+        "Width": 600,
+        "Height": 450,
+        "FOV_Degrees": 90,
+        "MotionBlurAmount": 0
+      }
+    ],
+    "NoiseSettings": [
+      {
+        "Enabled": false,
+        "ImageType": 0
+      },
+      {
+        "Enabled": false,
+        "ImageType": 1
+      },
+      {
+        "Enabled": false,
+        "ImageType": 2
+      },
+      {
+        "Enabled": false,
+        "ImageType": 5
+      },
+      {
+        "Enabled": false,
+        "ImageType": 6
+      }
+    ],
+    "UnrealEngine": {
+      "PixelFormatOverride": [
+        {
+          "ImageType": 0,
+          "PixelFormat": 0
+        }
+      ]
+    }
+  },
+  "TimeOfDay": {
+    "Enabled": false,
+    "StartDateTime": "",
+    "CelestialClockSpeed": 1,
+    "StartDateTimeDst": false,
+    "UpdateIntervalSecs": 60
+  },
+  "SubWindows": [
+    {
+      "WindowID": 0,
+      "CameraName": "0",
+      "ImageType": 0,
+      "VehicleName": "",
+      "Visible": false,
+      "External": false
+    }
+  ],
+  "SegmentationSettings": {
+    "InitMethod": "None",
+    "MeshNamingMethod": "",
+    "OverrideExisting": true
+  },
+  "Vehicles": {
+    "myCam": {
+      "VehicleType": "ComputerVision"
+    }
+  }
+}
