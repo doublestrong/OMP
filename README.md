@@ -3,7 +3,18 @@ This work explores the problem of automatic marker placement within a scene. Spe
 
 https://user-images.githubusercontent.com/5796120/224241331-9ab8705b-3676-4709-9e3e-f26a33c1486a.mov
 
-This is the code base for the paper [Optimizing Fiducial Marker Placement for Improved Visual Localization](https://arxiv.org/abs/2211.01513). The code and examples have been tested on Ubuntu 20.04. It is a long README. You may want to navigate using tables of contents below and/or beside README.md in the header.
+This is the code base for the paper [Optimizing Fiducial Marker Placement for Improved Visual Localization](https://arxiv.org/abs/2211.01513).
+
+```bibtex
+@article{huang2023omp,
+  title={Optimizing Fiducial Marker Placement for Improved Visual Localization},
+  author={Huang, Qiangqiang and DeGol, Joseph and Fragoso, Victor and Sinha, Sudipta N. and Leonard, John J.},
+  journal={IEEE Robotics and Automation Letters}
+  year={2023}
+}
+```
+
+The code and examples have been tested on Ubuntu 20.04. It is a long README. You may want to navigate using tables of contents below and/or beside README.md in the header.
 
 Table of Contents
 =================
