@@ -10,7 +10,7 @@ Table of Contents
 * [OMP: Optimized Marker Placement](#omp-optimized-marker-placement)
 * [Installation](#installation)
    * [The OMP code](#the-omp-code)
-   * [Airsim and the Unreal Engine](#airsim-and-the-unreal-engine)
+   * [AirSim and the Unreal Engine](#airsim-and-the-unreal-engine)
 * [Starting from scratch with a textured 3D model](#starting-from-scratch-with-a-textured-3d-model)
    * [Step 1: creating an environment in Unreal Engine](#step-1-creating-an-environment-in-unreal-engine)
    * [Step 2: creating an occupancy grid map of the environment](#step-2-creating-an-occupancy-grid-map-of-the-environment)
@@ -30,7 +30,7 @@ conda env create -f env.yaml
 conda activate omp
 ```
 
-## Airsim and the Unreal Engine
+## AirSim and the Unreal Engine
 We use [Unreal Engine 4.27](https://www.unrealengine.com/en-US) and [AirSim](https://github.com/microsoft/AirSim) to create a simulation environment and collect data from the environment, respectively. To create an environment for a real-world scene, a textured mesh of the scene (e.g., ply, obj, fbx files) is needed. We assume you already have the mesh in hand, so we do not include packages for 3D reconstruction here.
 
 Please refer to [AirSim](https://github.com/microsoft/AirSim) for installing Unreal Engine 4.27 and AirSim. On Ubuntu, you can test the installation by using `UnrealEngine/Engine/Binaries/Linux/UE4Editor` to open `AirSim/Unreal/Environments/Blocks/Blocks.uproject`. If you encounter errors in opening `Blocks.uproject`, please refer to [this post](https://github.com/microsoft/AirSim/issues/4535). To install the Python API of AirSim, please refer to [this issue](https://github.com/microsoft/AirSim/issues/3333) for installing the API with an improved speed for generating images. We adapt suggestions in that github issue for our use:
