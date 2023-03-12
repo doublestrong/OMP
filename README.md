@@ -29,9 +29,9 @@ Table of Contents
    * [Step 3: generating the data needed by the OMP algorithm](#step-3-generating-the-data-needed-by-the-omp-algorithm)
    * [Step 4: computing the optimized marker placement](#step-4-computing-the-optimized-marker-placement)
    * [Step 5: computing random and uniform placements](#step-5-computing-random-and-uniform-placements)
-   * [Step 5: placing markers](#step-5-placing-markers)
-   * [Step 6: generating the data for evaluating marker placements](#step-6-generating-the-data-for-evaluating-marker-placements)
-   * [Step 7: evaluation by computing localization recalls](#step-7-evaluation-by-computing-localization-recalls)
+   * [Step 6: placing markers](#step-6-placing-markers)
+   * [Step 7: generating the data for evaluating marker placements](#step-7-generating-the-data-for-evaluating-marker-placements)
+   * [Step 8: evaluation by computing localization recalls](#step-8-evaluation-by-computing-localization-recalls)
 # Installation
 ## The OMP code
 The OMP code includes not only the implementation of the algorithm, Optimized Marker Placement (OMP), described in our paper but also other marker placement methods as well as scripts for simulating the data needed by OMP and evaluating marker placement methods.
@@ -136,7 +136,7 @@ python scripts/unif_contour_placements.py
 ```
 Now you can find 5 sets of random placements in the folder `rd_placements` and 5 sets of uniform placements in the folder `unif_contour` under your project directory.
 
-## Step 5: placing markers
+## Step 6: placing markers
 If you would like to evaluate marker placements in simulation environments, we provide you Python scripts that automatically place AprilTags in simulation environments. Please follow the three steps below:
 1. Download png images of all tags in the family of AprilTag tag36h11: [link](https://drive.google.com/drive/u/0/folders/1ShIr_YNgE3fR5EUfe0tdIYYpp_1Ghl-U).
 2. If you would like to place K tags, import the first K of these tag images to `UE4Editor`. Specifically, in Content Browser of `UE4Editor`, navigate to `/Game/Flying/`, create a folder `tags`, and import images with tag IDs from 0 to K-1 to the folder. Create materials for each of these imported images by right-clicking the image and choosing `Create Material`, generating a new material in the folder. We need to convert the material to a decal. Double-click the material and set `Material Domain` to `Deferred Decal`, `Blend Mode` to `Translucent`, and `Decal Blend Mode` to `Translucent`.
@@ -161,7 +161,7 @@ If you would like to evaluate marker placements in simulation environments, we p
    
    After running all three scripts in the UE console, you can find AprilTags newly added to the scene in `UE4Editor`. It could happen that a part of a tag is inside walls after placing tags automatically. You may need to slightly adjust poses of some tags in the simulation environment to ensure reasonable quality of the marker placement. This is a known issue because we do not consider marker sizes in the OMP algorithm. After you check all markers, set z coordinates of all markers and correlated assets in `UE4Editor` to something like 99999 to lift them outside the scene. In following sections, we will use scripts to move a set of markers down each time when we generate the data for evaluating solely this set of markers.
 
-## Step 6: generating the data for evaluating marker placements
+## Step 7: generating the data for evaluating marker placements
 Hit `Play` in `UE4Editor` and run
 ```console
 python scripts/airsim_capture_train_test_increment.py
@@ -170,7 +170,7 @@ In your project directory, you can find a new folder `evaluation`, which contain
      
    <img src="docs/img/test_img.png" alt="drawing" width="30%"/>
 
-## Step 7: evaluation by computing the localization recall
+## Step 8: evaluation by computing the localization recall
 Run
 ```console
 python scripts/evaluation_train_test.py
