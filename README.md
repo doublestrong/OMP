@@ -1,8 +1,4 @@
 # OMP: Optimized Marker Placement
-This work explores the problem of automatic marker placement within a scene. Specifically, given a predetermined set of markers and a scene model, we compute optimized marker positions within the scene that can improve accuracy in visual localization.
-
-https://user-images.githubusercontent.com/5796120/224241331-9ab8705b-3676-4709-9e3e-f26a33c1486a.mov
-
 This is the code base for the paper [Optimizing Fiducial Marker Placement for Improved Visual Localization](https://arxiv.org/abs/2211.01513).
 
 ```bibtex
@@ -13,6 +9,10 @@ This is the code base for the paper [Optimizing Fiducial Marker Placement for Im
   year={2023}
 }
 ```
+
+This work explores the problem of automatic marker placement within a scene. Specifically, given a predetermined set of markers and a scene model, we compute optimized marker positions within the scene that can improve accuracy in visual localization.
+
+https://user-images.githubusercontent.com/5796120/224241331-9ab8705b-3676-4709-9e3e-f26a33c1486a.mov
 
 The code and examples have been tested on Ubuntu 20.04. It is a long README. You may want to navigate using tables of contents below and/or beside README.md in the header.
 
