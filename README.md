@@ -31,7 +31,7 @@ Table of Contents
    * [Step 5: computing random and uniform placements](#step-5-computing-random-and-uniform-placements)
    * [Step 6: placing markers](#step-6-placing-markers)
    * [Step 7: generating the data for evaluating marker placements](#step-7-generating-the-data-for-evaluating-marker-placements)
-   * [Step 8: evaluation by computing localization recalls](#step-8-evaluation-by-computing-localization-recalls)
+   * [Step 8: evaluation by computing the localization recall](#step-8-evaluation-by-computing-the-localization-recall)
 # Installation
 ## The OMP code
 The OMP code includes not only the implementation of the algorithm, Optimized Marker Placement (OMP), described in our paper but also other marker placement methods as well as scripts for simulating the data needed by OMP and evaluating marker placement methods.
