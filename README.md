@@ -12,7 +12,7 @@ This is the code base for the paper [Optimizing Fiducial Marker Placement for Im
 
 This work explores the problem of automatic marker placement within a scene. Specifically, given a predetermined set of markers and a scene model, we compute optimized marker positions within the scene that can improve accuracy in visual localization.
 
-The code and examples have been tested on Ubuntu 20.04. It is a long README. You may want to navigate using tables of contents below and/or beside README.md in the header. Here is a teaser video about our work:
+The code and examples shown below have been tested on Ubuntu 20.04. It is a long README. You may want to navigate using tables of contents below and/or beside README.md in the header. Here is a teaser video about our work:
 
 https://user-images.githubusercontent.com/5796120/224241331-9ab8705b-3676-4709-9e3e-f26a33c1486a.mov
 
