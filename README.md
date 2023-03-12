@@ -9,7 +9,7 @@ This is the code base for the paper [Optimizing Fiducial Marker Placement for Im
 @article{huang2023omp,
   title={Optimizing Fiducial Marker Placement for Improved Visual Localization},
   author={Huang, Qiangqiang and DeGol, Joseph and Fragoso, Victor and Sinha, Sudipta N. and Leonard, John J.},
-  journal={IEEE Robotics and Automation Letters}
+  journal={IEEE Robotics and Automation Letters},
   year={2023}
 }
 ```
