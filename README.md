@@ -137,7 +137,7 @@ Now you can find 5 sets of random placements in the folder `rd_placements` and 5
 
 ## Step 6: placing markers
 If you would like to evaluate marker placements in simulation environments, we provide you Python scripts that automatically place AprilTags in simulation environments. Please follow the three steps below:
-1. Download png images of all tags in the family of AprilTag tag36h11: [link](https://drive.google.com/drive/u/0/folders/1ShIr_YNgE3fR5EUfe0tdIYYpp_1Ghl-U).
+1. Download png images of all tags in the family of AprilTag tag36h11: [link](https://drive.google.com/file/d/19s5ttVm0Y5f6HJdi2jv67xwtTnWYn0Ul/view?usp=drive_link).
 2. If you would like to place K tags, import the first K of these tag images to `UE4Editor`. Specifically, in Content Browser of `UE4Editor`, navigate to `/Game/Flying/`, create a folder `tags`, and import images with tag IDs from 0 to K-1 to the folder. Create materials for each of these imported images by right-clicking the image and choosing `Create Material`, generating a new material in the folder. We need to convert the material to a decal. Double-click the material and set `Material Domain` to `Deferred Decal`, `Blend Mode` to `Translucent`, and `Decal Blend Mode` to `Translucent`.
 
      <img src="docs/img/tag_mat.png" alt="drawing" width="30%"/>
